@@ -18,13 +18,13 @@
       <!--Manejo de recursos-->
       <a-assets timeout="10000">
         <!--carga el terreno>
-        <a-asset-item  id="terreno del mapa" src="./models/terrain/scene.gltf"></a-asset-item>
+        <a-asset-item  id="terrenoDelMapa" src="./models/terrain/scene.gltf"></a-asset-item>
         <!--carga el trineo>
         <a-asset-item id="trineo" sr ="./models/airplane/Trineo.glb"></a-asset-item>
       </a-assets>
 
       <!-- Agrega las propiedades del terreno  -->
-      <a-entity id="terreno" gltf-model="#terreno del mapa" position="0 0 0" scale="0.3 0.3 0.3" animation="property: position; to: 0 0 1000;easing:linear; loop:true; dur: 150000" terraim-rotation-resder></a-entity>
+      <a-entity id="terreno" gltf-model="#terrenoDelMapa" position="0 0 0" scale="0.3 0.3 0.3" animation="property: position; to: 0 0 1000;easing:linear; loop:true; dur: 150000" terraim-rotation-resder></a-entity>
       <!-- Agrega las propiedades del trineo -->
       <a-entity id="sled_model" gltf-model="#trineo" position="0 -9 0" scale="0.15 0.15 0.15" rotation="0 90 0" sled-rotation-reader></a-entity>
     </a-scene>
